@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Wish Card 💜</title>
+  <!-- Beautiful Fonts Included -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Padauk:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Padauk', 'Poppins', sans-serif;
+    }
+
+    body {
+      /* ပင်မ နောက်ခံပုံ */
+      background: linear-gradient(rgba(15, 5, 25, 0.6), rgba(15, 5, 25, 0.2)), 
+                  url('photo/future.jpg') center/cover no-repeat fixed;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Glassmorphism Card Style */
+    .wish-card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 25px;
+      padding: 30px 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: #ffffff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wish-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #f0e6ff;
+      text-shadow: 0 0 10px rgba(218, 112, 214, 0.5);
+    }
+
+    /* စာရေးသည့်အကွက်၏ နောက်ခံပုံ ပြင်ဆင်ချက် */
+    .wish-paper {
+      /* 'photo/wish-bg.jpg' နေရာတွင် စာနောက်ခံပုံ ထည့်ပါ */
+      background: linear-gradient(rgba(20, 5, 35, 0.65), rgba(20, 5, 35, 0.65)), 
+                  url('photo/my future.jpg') center/cover no-repeat;
+      border: 1px solid rgba(218, 112, 214, 0.5);
+      border-radius: 18px;
+      padding: 25px 20px;
+      box-shadow: inset 0 0 15px rgba(218, 112, 214, 0.2), 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .wish-header-heart {
+      font-size: 40px;
+      margin-bottom: 12px;
+      display: inline-block;
+      animation: heartPulse 1.2s infinite alternate;
+    }
+
+    @keyframes heartPulse {
+      0% { transform: scale(1); filter: drop-shadow(0 0 5px #ff69b4); }
+      100% { transform: scale(1.25); filter: drop-shadow(0 0 15px #ff69b4); }
+    }
+
+    /* အထူးပြင်ဆင်ထားသော ခေါင်းစဉ် စာလုံးလှကြီးများ */
+    .hbd-main-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 15px;
+      /* Gradient Color စာလုံးအရောင် */
+      background: linear-gradient(45deg, #ffb7c5, #da70d6, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* စာလုံးအလင်း glow effect */
+      filter: drop-shadow(0 0 10px rgba(218, 112, 214, 0.8));
+    }
+
+    /* th စာလုံး အပေါ်တင်ရန် စတိုင်လ် */
+    .hbd-main-title sup {
+      font-size: 14px;
+      font-weight: 600;
+      vertical-align: super;
+      text-decoration: underline;
+    }
+
+    .wish-body {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .wish-highlight {
+      display: block;
+      margin-top: 18px;
+      font-size: 19px;
+      font-weight: bold;
+      color: #ffb7c5;
+      text-shadow: 0 0 12px #ff69b4, 0 2px 5px rgba(0,0,0,0.9);
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #da70d6, #8a2be2);
+      color: white;
+      border: none;
+      padding: 12px 35px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(138, 43, 226, 0.5);
+      margin-top: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 25px rgba(218, 112, 214, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wish-card">
+    <h3 class="wish-title">မွေးနေ့ဆုတောင်းလွှာ 📜</h3>
+    
+    <div class="wish-paper">
+      <div class="wish-header-heart">💖</div>
+
+      <!-- စာလုံးကြီးကြီးလှလှဖြင့် ပြင်ဆင်ထားသည့် အပိုင်း -->
+      <div class="hbd-main-title">
+        Happy 25<sup>th</sup> Birthday<br>
+        Nweni Linn ✨
+      </div>
+
+      <div class="wish-body">
+        ယနေ့ကျရောက်တဲ့မွေးနေ့မှသည်နောင်နှစ်ပေါင်းများစွာစိတ်၏ချမ်းသာခြင်းကိုယ်၏ကျန်းမာခြင်းများနှင့်အတူပျော်ရွှင်စရာနေ့ရက်များကိုအပြည့်အဝပိုင်ဆိုင်နိုင်ပါစေလို့ဆုတောင်ပေးလိုက်ပါတယ်။
+        အနီနဲ့စတင်ခင်မင်ခွင့်ရခဲ့တဲ့အတွက်၊အနီနဲ့စကားပြောခွင့်ရတဲ့နေ့ရက်တိုင်းအတွက်အရမ်းဝမ်းသာမိသလိုကျေးဇူးလည်းအများကြီးတင်ပါတယ်။အနီနဲ့တွေ့ခွင့်ရခဲ့တာဟာအရမ်းတန်းဖိုးရှိလွန်းတယ်။
+        အနီနဲ့တွေ့ရတဲ့နေ့ရက်တိုင်းကအရမ်းပျော်ရွှင်ရတယ်။ရေစက်ပါလို့၊ကံပါလိုဆုံကြပေမယ်အဲ့ဒီရေစက်လေးကိုမပျက်စေချင်ဘူး။အနီ့ရဲ့တောက်ပတဲ့အပြုံးလေးတွေကိုမြင်ရတဲ့အခါတိုင်းအလိုလိုစိတ်ချမ်းသာစိတ်အေးချမ်းသွားစေတယ်။
+        အိပ်မက်တွေ၊ရည်မှန်းချက်တွေအကုန်လုံးအဆင်ပြေပြေနဲ့အကောင်အထည်ဖော်နိုင်ပါစေလို့လည်းဆုတောင်းပေးပါတယ်။ဘာပဲဖြစ်ဖြစ်အနီ့ဘေးနားမှာအမြဲတမ်းနားလည်ပေးပြီးအားဖြည့်ပေးမယ့်သူတစ်ယောက်အဖြစ်စိတ်ချလက်ချအားကိုးလို့ရတယ်နော်။
+        ဒီနေ့ရက်လေးမှာအပျော်ဆုံး၊အမှတ်တရအရဆုံးမွေးနေ့လေးဖြစ်ပါစေ။
+        <span class="wish-highlight">Happy Birthday My Princess! 👑💜</span>
+      </div>
+    </div>
+
+    <button class="btn" onclick="alert('Happy Birthday Once Again! I Love You 💜')">Finish ❤️</button>
+  </div>
+
+</body>
+</html>
